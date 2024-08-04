@@ -3,9 +3,11 @@ An experimental 8-bit, bit serial computer.
 
 TICK is an experimental 8-bit, serial arithmetic CPU designed around the commonly available 74HCxx logic series.
 
-TICK uses 26 74HXxx ICs, plust a 32K byte RAM and a 64K x 16-bit ROM - or a ROM emulator.
+TICK uses 26 74HXxx ICs, plus a 32K byte RAM and a 64K x 16-bit ROM - or a ROM emulator.
 
-TICK fits into a 4-layer PCB, sized 100mm x 110mm. It has 5 principal connectors that allow you to access all of the main signals and buses.
+TICK fits onto a 4-layer PCB, sized just 100mm x 110mm. It has 5 principal connectors that allow you to access all of the main signals and buses. Low cost 6-way JST XH ribbon cables are used to hook up the TICK serial inetface bus.  A 40 way 2.54mm pitch header allows access to the parallel buses.
+
+USB (power) is supplied either through a USB microB connector or via USB C connector of the the Clone Pi Pico "ROMulator".
 
 PCB Headers are included that will allow a very low-cost Raspberry Pi Pico (clone) to be plugged in, providing emulation of the ROM and also implementing a simple serial interface to a laptop or PC.
 
