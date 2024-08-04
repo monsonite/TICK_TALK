@@ -40,6 +40,20 @@ TICK is highly influenced by Marcel van Kervinck's 8-bit Gigatron TTL Computer. 
 
 It is very marginal whether an 8-bit serial architecture will have fewer ICs than an 8-bit parallel design. Bit Serial really comes into fruition when you have a wordsize of 16 or more bits.
 
+So the motivation for developing TICK was to make an intelligent node that can interface to SPI serial peripherals and other intelligent nodes. It won't be the fastest computer on the planet - but it should be able to compete with 1970s/80s 8-bit workhorses, like the 6502, Z80, 8051, 6309 etcand even older machines that predate the microprocessor - such as the  PDP-8 (1965) and the EDUC8 (1974).
+
+TICK is a modified Harvard architecture.  Address and data from the ROM are conveyed on separate buses to those of the RAM. Simple shift registers are used to convert between the serial and parallel domains. A task that they can do very efficiently.
+
+### Registers
+
+TICK has a single 8-bit accumulator AC. AC may be loaded with an 8-bit literal direct from the lower 8 ROM data lines, or AC can be loaded with data addressed from the 32K x 8-bit SRAM.
+
+As well as the Accumulator AC, TICK has a 16-bit wide general purpose register known as the B-Register. The B-Reg is 16-bits wide, in order to accept a 16-bit word, in parallel from the ROM and either use that as a indirect RAM address, or load it into the ROM Program Counter (PC) to perform a Conditional Branch or a 16-bit Long Jump.
+
+The PC mentioned above is also 16-bits wide and can cover the full 16 bits of the ROM addressing range. A 16-bit jump is non-conditional, but an 8-bit "page" branch is conditional on the ZERO and SIGN flags or the Accumulator.
+
+
+
 
 
 
