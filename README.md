@@ -31,6 +31,15 @@ The ICs are utilised in 5 main sub-circuits:
 
 In an ideal world,  TICK would be a BlackBox with just 2 wires for power, and 2 wires for data in and data out. If you look at a landline telephone or broadband modem, they only have 2 wires or 4 wires. However for the purposes of this project we reqire syncronous data transfer - and that needs a clock that is shared between all nodes.
 
-In general terms, TICK communicated with external devices via an SPI compatible interface.
+In general terms, TICK communicates with external devices via an SPI compatible interface.
+
+
+## Architecture
+
+TICK is highly influenced by Marcel van Kervinck's 8-bit Gigatron TTL Computer. The Gigatron used ten ICs in its ALU, I can do it serially in two. However a bit-serial design needs additional ICs to implement the clock sequencer, the timing pulse generator and the SRAM and Jump logic.
+
+It is very marginal whether an 8-bit serial architecture will have fewer ICs than an 8-bit parallel design. Bit Serial really comes into fruition when you have a wordsize of 16 or more bits.
+
+
 
 
