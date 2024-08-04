@@ -52,7 +52,7 @@ TICK has a single 8-bit accumulator AC. AC may be loaded with an 8-bit literal d
 
 As well as the Accumulator AC, TICK has a 16-bit wide general purpose register known as the B-Register. The B-Reg is 16-bits wide, in order to accept a 16-bit word, in parallel from the ROM and either use that as a indirect RAM address, or load it into the ROM Program Counter (PC) to perform a Conditional Branch or a 16-bit Long Jump.
 
-The PC mentioned above is also 16-bits wide and can cover the full 16 bits of the ROM addressing range. A 16-bit jump is non-conditional, but an 8-bit "page" branch is conditional on the ZERO and SIGN flags or the Accumulator.
+The PC mentioned above is also 16-bits wide and can cover the full 16 bits of the ROM addressing range. A 16-bit jump is non-conditional, but an 8-bit "page" branch is conditional on the ZERO and SIGN flags from the Accumulator.
 
 
 
