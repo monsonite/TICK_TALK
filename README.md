@@ -1,6 +1,9 @@
 # TICK_TALK
 ## An experimental 8-bit, bit serial computer.
 
+![image](https://github.com/user-attachments/assets/67b22099-a631-4882-94f5-fcab4ab1e6e3)
+
+
 TICK is an experimental 8-bit, serial arithmetic CPU designed around the commonly available 74HCxx logic series.
 
 TICK uses 26 74HXxx ICs, plus a 32K byte RAM and a 64K x 16-bit ROM - or a ROM emulator.
