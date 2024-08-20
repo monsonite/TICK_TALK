@@ -1,5 +1,5 @@
 # TICK_TALK
-An experimental 8-bit, bit serial computer.
+## An experimental 8-bit, bit serial computer.
 
 TICK is an experimental 8-bit, serial arithmetic CPU designed around the commonly available 74HCxx logic series.
 
