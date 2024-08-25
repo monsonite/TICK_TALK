@@ -1,10 +1,12 @@
 TICK -PCB Modifications
 
+The first 2 should be done before fitting any components.
+
 1.  Topside - Cut track between U16 pin 3 and pin 11.
 	Underside - Strap U16 pin 11 to PC-CLK U11 pin 11.
 	
 2A. Topside - U15 Isolate pin 9 (!Y7) Isolate pin 10 (PC-SUM).
-	Underside strap !Y7 to pin 10, strap PC-SUM to pin9
+	Underside strap !Y7 to pin 10, strap PC-SUM to pin 9
 	
 2B. Underside U27 pin 9 - isolate
 
