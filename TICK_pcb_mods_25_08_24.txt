@@ -1,0 +1,46 @@
+TICK -PCB Modifications
+
+1.  Topside - Cut track between U16 pin 3 and pin 11.
+	Underside - Strap U16 pin 11 to PC-CLK U11 pin 11.
+	
+2A. Topside - U15 Isolate pin 9 (!Y7) Isolate pin 10 (PC-SUM).
+	Underside strap !Y7 to pin 10, strap PC-SUM to pin9
+	
+2B. Underside U27 pin 9 - isolate
+
+2C. U5 Pin 10 underside - Isolate down-going track
+	Underside - strap U5 pin 9 (BOUT) to via in middle of U9
+	
+3. Underside - U2 pin 13 Strap PC_EN to GND
+
+4. U11 pin 6 !CRES  link to U16 pin 1
+
+5. U13 pin 8 !CSET  link to U16 pin 4
+
+6. Strap U19 pin 11 !JMP to U10 pin 7 !Y7
+
+7. U14 pin 13 - isolate (BOUTH)
+
+8. U9 pin 1 - strap to U19 pin 8 (!RESET)
+
+10. U26 pin 1 - connect to U19 pin 8 (!RESET)
+
+11. U14 pin 11 (ALU_CARRY_IN) connect to U16 pin 5
+
+12. U23 pin 2 strap to BUS7 U22 pin 15
+
+13. U16 pin 2 strap to U14 pin 9 (ALU_CARRY)
+
+14. U15 pin 1 (I0) strap to U10 pin 14
+
+15. U13 pin 1 - strap to U9 pin 10 (T0)
+
+16. U14 pin 6 - stap to U3 pin 9 PC_Out
+
+17. U9 pin 12 (RUN) strap to !T18 NANDED with STEP
+
+18. U13 pin 9 strap to U9 pin 15 (T1)
+
+19. U20 pin 2 strap to U12 pin 6 (Y0)
+
+20. U17 pin 11 (SR) connect to GND.
