@@ -1,6 +1,54 @@
 # TICK_TALK
 ## An experimental 8-bit, bit serial computer.
 
+
+## Hebden Bridge Workshop Update  25-08-24
+
+
+OSHCamp 2024
+
+TICK Workshop Update.
+
+Thanks to the 16 people who attended the 1st TICK workshop session at Hebden Bridge, on Sunday August 25th.
+
+Most kits were assembled without too many problems, and several were close to completion at the end of the afternoon.
+
+Unfortunately some components were misplaced and not found until late in the afternoon, close to packing up time, but workarounds were employed.
+
+Attendees should make contact me via email at k*n.boat@gmail.com - replacing the "t" with the 1st letter of my 1st name.
+
+
+
+### Points Arising.
+
+1.  The 74HC4060.dig file is now available. Download it and place it in the Lib  (libraries) folder of where you have installed "Digital"  - ideally under 
+
+\Digital\Digital\lib\DIL Chips\74xx\counter
+
+Then restart Digital and select components, custom, update and it should then be available.
+
+2. Tick now has a Hackaday.io project page here:
+
+https://hackaday.io/project/197333-tick-a-novel-homebrew-mcu-architecture-in-28-ics
+
+Please feel free to join the project team and message me in the team messaging section.
+
+
+3.  I have received notification from PCBWay in China and they are prepared to sponsor the manufacture of the next version of the Tick PCB.
+
+I am tempted to have a SMT version assembled in China - so it will be smaller, lighter and have better features.
+
+I would like your feedback over, whether you would like to receive this SMT version in the Autumn.
+
+Please send feedback to my Gmail address.
+
+
+Ken
+
+/*********************************************************************************************************************************
+
+
+
 ![image](https://github.com/user-attachments/assets/67b22099-a631-4882-94f5-fcab4ab1e6e3)
 
 
