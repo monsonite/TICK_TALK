@@ -34,7 +34,16 @@ https://hackaday.io/project/197333-tick-a-novel-homebrew-mcu-architecture-in-28-
 Please feel free to join the project team and message me in the team messaging section.
 
 
-3.  I have received notification from PCBWay in China and they are prepared to sponsor the manufacture of the next version of the Tick PCB.
+3. It would be sensible to convert the Eagle CAD pcb schematic and pcb layout files to KiCad - to allow greater accessibility to interested users. I will investigate importing the schematic into Kicad, with the aim of generating the next iteration of the pcb using Kicad.
+
+4. As the workshop was primarily focussed on assembly of the pcb in the time available, the Pi Pico firmware aspects of the project remained virtually unmentioned.
+
+The principal role of the Pico is to emulate a 64K x16-bit ROM. It does this by "sniffing" the ROM address lines generated from the Program Counter, and using the two 74HC595 shift registers (U26, U27) located under the Pi Pico, to output the 16-bit value from that ROM address onto the Instruction Bus.
+
+5. The 6-way JST cables supplied will allow the Pi Pico access to both the ROMulator Port X2 (on the left) and the SPI Port X1 (on the right). Details of these connectors and the modifications to the wiring of the cable to the Pico GPIO pins 18 to 21 and 26 to 29 will be released shortly in a separate document'
+
+
+6.  I have received notification from PCBWay in China and they are prepared to sponsor the manufacture of the next version of the Tick PCB.
 
 I am tempted to have a SMT version assembled in China - so it will be smaller, lighter and have better features.
 
