@@ -325,4 +325,4 @@ Two 6-way JST cables are used to connect X1 and X2 to the GPIO and 3V3 supply fr
 
 
 
-
+ 
