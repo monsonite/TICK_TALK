@@ -54,6 +54,12 @@ Please send feedback to my Gmail address.
 
 Ken
 
+Update  - Lissa has created a new discord server for TICK
+
+try this invite code.
+
+https://discord.gg/FmW9dqFGb5
+
 /*************************************************************************************************************************
 
 
