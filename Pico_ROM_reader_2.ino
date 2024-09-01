@@ -1,3 +1,10 @@
+// This was initially written to drive a "LED and KEY" module - which uses the TM1638 IC
+// to multiplex 8, 7-segment displays, 8 single LEDs and 8 push switches
+// see https://www.arduino.cc/reference/en/libraries/tm16xx-leds-and-buttons/  for library details
+
+// LED & KEY module https://www.aliexpress.com/item/1005004919749417.html
+
+// LED & KEY code commented out here  - now just reports to serial terminal with print statements
 
 // #include <TM1638plus.h>
 
