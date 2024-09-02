@@ -1,0 +1,54 @@
+Program Counter.
+
+The Program Counter consists of a 16-bit serial-in, parallel out shift register, a half adder, an 2-input multiplexer and a carry flipflop. However the design is somewhat convoluted and spread across 6 ICs.
+
+The following notes explain the design, and a simulation of the Program Counter circuit is available on the github repo.
+
+U2 and U3 (74HC595) form the 16-bit Program Counter.
+
+Output pins
+
+15		RMA15 (MSB)
+1		RMA14
+2		RMA13
+3		RMA12
+4		RMA11
+5		RMA10
+6		RMA9
+7		RMA8  (LSB)
+
+9		Serial Output to lower stage
+10		/CLR	Active LOW reset signal - check it goes low when RESET switch pressed
+11		PC_CLK  16-clock pulse burst - check for continuous clocking
+12		Outout Latch clock pulse - low going pulse, every 16th clock
+13      /PC_EN  Active LOW enable pin - should remain LOW
+14      PC_IN  Serial Input 
+
+8		GND
+16 		3V3
+
+The Program Counter is connected to U12, U14 U15 and U16.
+
+U12 (74HC86) provides inversion of the !JMP signal.
+
+The left hand side of U14 (74HC283) provides a half adder to increment the PC by one, once per machine cycle (20 clocks).
+
+The right hand side of  U15 (74HC126) provides a 2-input multiplexer. The PC is either loaded with the current count, or if !JMP is LOW it is loaded with the value in the B-Register.
+
+U16 (74HC74) is a dual flipflop. The right-hand flipflop is used to hold any carry produced when adding 1 to the PC and adding it into the next half sum.
+
+
+
+Ensure continuity of:
+
+U2 (14) to U15 (8,11) 	*
+U2 (9) to U3 (14)  		*
+U3 (9) to U14(6) 		*
+
+
+U16 (12) to U14(1)		*
+U16 (11) to U7 (8)		new
+U16 (10) to U9(11)		new
+U16 (9) to U14(7)		*
+ 
+U14 (4) to U15(9)		*
